@@ -2,7 +2,7 @@
 import React from 'react';
 // import imagen from '../images/exercise.png';
 import circleImg from '../images/circles.png';
-
+// importacion de estilos
 import './styles/Card.css';
 
 class Card extends React.Component {

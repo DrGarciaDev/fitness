@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from '../components/Card';
+import ExerciseList from '../components/ExerciseList';
 import Welcome from '../components/Welcome';
 
 
@@ -42,20 +42,10 @@ class Exercises extends React.Component {
                 <Welcome 
                     username="Luis García"
                 />
-                {/* las llaves indicane que se colocará una expresion */}
-                {
-                    this.state.data.map((exercise) => {
-                        return(
-                            <Card
-                                title = { exercise.title }
-                                description = { exercise.description }
-                                img = { exercise.img }
-                                leftColor = { exercise.leftColor }
-                                rigthtColor = { exercise.rightColor }
-                            />
-                        );
-                    })
-                }    
+                
+                <ExerciseList 
+                    exercises = { this.state.data }
+                />
             </div>
         );
     }

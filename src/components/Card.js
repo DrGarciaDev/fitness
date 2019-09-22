@@ -7,20 +7,20 @@ import './styles/Card.css';
 
 class Card extends React.Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            image: ''
-        }
-    }
+    // constructor(props) {
+    //     super(props)
+    //     this.state = {
+    //         image: ''
+    //     }
+    // }
 
-    componentDidMount() {
-        setTimeout(() => {
-            this.setState ({
-                image: 'https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise.png?alt=media&token=b9c4b236-16a9-4a56-bba2-90c9660a0f06'
-            })
-        }, 5000);
-    }
+    // componentDidMount() {
+    //     setTimeout(() => {
+    //         this.setState ({
+    //             image: 'https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise.png?alt=media&token=b9c4b236-16a9-4a56-bba2-90c9660a0f06'
+    //         })
+    //     }, 5000);
+    // }
 
     render () {
         // return <h1>Card</h1>
@@ -38,7 +38,7 @@ class Card extends React.Component {
                     <div className="row center">
                         <div className="col-6">
                             {/* <img src={ img } className="float-right" /> */}
-                            <img src={ this.state.image } className="float-right" />
+                            <img src={ img } className="float-right" />
                         </div>
                         <div className="col-6 Fitness-Card-Info">
                             <h1>{ title }</h1>

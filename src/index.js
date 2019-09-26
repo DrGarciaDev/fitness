@@ -7,12 +7,14 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import Exercises from './pages/Exercises'
+// import Exercises from './pages/Exercises';
+import App from './components/App';
+
 // Importacion de bootstrap 
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-const container = document.getElementById('root')
+const container = document.getElementById('root');
 
 // ReactDOM.render(__QUE__, __DONDE__)
-ReactDom.render( <Exercises /> , container);
+ReactDom.render( <App /> , container);

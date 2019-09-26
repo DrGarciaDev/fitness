@@ -34,3 +34,6 @@ Add the following scripts in your package.json:
 Then run:
 
 	npm run deploy
+
+comando para instalar react-route-dom en su version 5.0.0
+	npm i react-router-dom@5.0.0 --save

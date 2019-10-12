@@ -1,8 +1,22 @@
 import React from 'react';
 
 class ExercisesNew extends React.Component {
+    constructor(props) {
+        super(props)
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        console.log('CLICKED');
+        console.log(this);
+    }
+
     render() {
-        return 'ExewrcisesNew';
+        return (
+            <button onClick={ this.handleClick }>
+                SEND
+            </button>
+        );
     }
 }
 

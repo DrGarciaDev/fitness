@@ -25,13 +25,13 @@ class Card extends React.Component {
     render () {
         // return <h1>Card</h1>
         // Haciendo destructuring para evitar escribir en todas las props utilizadas el this.props
-        const { title, description, img, leftColor, rigthtColor } = this.props;
+        const { title, description, img, leftColor, rightColor } = this.props;
 
         return (
             <div className="card mx-auto Fitness-Card" 
                 /* estilos en linea  */
                 style={{
-                    backgroundImage: `url(${ circleImg }), linear-gradient(to right, ${ leftColor }, ${ rigthtColor })`
+                    backgroundImage: `url(${ circleImg }), linear-gradient(to right, ${ leftColor }, ${ rightColor })`
                 }}
             >
                 <div className="card-body">

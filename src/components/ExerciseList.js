@@ -2,11 +2,11 @@ import React from 'react';
 import Card from './Card';
 
 
-const ExerciseList = (props) => (
+const ExerciseList = ({exercises}) => (
         <div>
         {/* las llaves indicane que se colocará una expresion */}
         {
-            props.exercises.map((exercise) => {
+            exercises.map((exercise) => {
                 return(
                     <Card
                         key = { exercise.id }
@@ -14,7 +14,7 @@ const ExerciseList = (props) => (
                         description = { exercise.description }
                         img = { exercise.img }
                         leftColor = { exercise.leftColor }
-                        rigthtColor = { exercise.rightColor }
+                        rightColor = { exercise.rightColor }
                     />
                 );
             })

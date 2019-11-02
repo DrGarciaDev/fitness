@@ -37,3 +37,8 @@ Then run:
 
 comando para instalar react-route-dom en su version 5.0.0
 	npm i react-router-dom@5.0.0 --save
+
+
+REPOSITORIO DE LA API CREADA POR EL INSTRUCTOR PARA SER CONSUMIDA EN ESTE CURSO
+
+https://github.com/RpL02/FitnessAPI
